@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>UFC Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>UFC Quiz</h1>
+        <h3>Test your UFC knowledge</h3>
+        <img id="logo" src="./images/ufclogo.png" alt="UFC Logo">
+        <span id="jso"><label for="file"> Upload JSON File: </label><br>
+            <input type="file" id="file"></input><br></span>
+        <p>Click on a question to show a hint!</p>
+        <span id = "all">
+        <ol class="all">
+            <li>
+                <span id="q1">Which of the following techniques is illegal in the UFC?</span>
+                <img id="img1"><br>
+                <span id="h1">Hint: This technique became illegal due to the observed damage it could inflict on cinder
+                    blocks. </span>
+                <ol>
+                    <li>
+                        <input id="01" type="radio" name="m1" value="a">Heel Hook</input>
+                    </li>
+                    <li>
+                        <input id="02" type="radio" name="m1" value="b">Flying Knee</input>
+                    </li>
+                    <li>
+                        <input id="03" type="radio" name="m1" value="c">Oblique Kick</input>
+                    </li>
+                    <li>
+                        <input id="04" type="radio" name="m1" value="d">12-6 Elbow</input>
+                    </li>
+                </ol>
+            </li>
+            <li><span id="q2">Which heavyweight champion has the most title defenses?</span>
+                <img id="img2"><br>
+                <span id="h2">Hint: This fighter is also a volunteer firefighter on the side.</span>
+                <ol>
+                    <li>
+                        <input id="11" type="radio" name="m2" value="a">Stipe Miocic</input>
+                    </li>
+                    <li>
+                        <input id="12" type="radio" name="m2" value="b">Cain Velasquez</input>
+                    </li>
+                    <li>
+                        <input id="13" type="radio" name="m2" value="c">Fedor Emelianenko</input>
+                    </li>
+                    <li>
+                        <input id="14" type="radio" name="m2" value="d">Francis Ngannou</input>
+                    </li>
+                </ol>
+            </li>
+            <li><span id="q3">Which of these fighters is officially undefeated?</span>
+                <img id="img3"><br>
+                <span id="h3">Hint: This fighter is known for having wrestled bears as a child.</span>
+                <ol>
+                    <li>
+                        <input id="21" type="radio" name="m3" value="a">Islam Makhachev</input>
+                    </li>
+                    <li>
+                        <input id="22" type="radio" name="m3" value="b">Khabib Nurmagomedov</input>
+                    <li>
+                        <input id="23" type="radio" name="m3" value="c">Fedor Emelianenko</input>
+                    </li>
+                    <li>
+                        <input id="24" type="radio" name="m3" value="d">Khamzat Chimaev</input>
+                    </li>
+                </ol>
+            </li>
+            <li><span id="q4">Who is the only fighter to ever knock out Israel Adesanya?</span>
+                <img id="img4"><br>
+                <span id="h4">Hint: He will be fighting him again this Saturday (11/12) at UFC 281. </span>
+                <ol>
+                    <li>
+                        <input id="31" type="radio" name="m4" value="a">Alex Pereira</input>
+                    </li>
+                    <li>
+                        <input id="32" type="radio" name="m4" value="b">Jan Blachowicz</input>
+                    </li>
+                    <li>
+                        <input id="33" type="radio" name="m4" value="c">Paulo Costa</input>
+                    </li>
+                    <li>
+                        <input id="34" type="radio" name="m4" value="d">Robert Whittaker</input>
+                    </li>
+                </ol>
+            </li>
+            <li><span id="q5">Which fighter has the nickname "Bones"?</span>
+                <img id="img5"><br>
+                <span id="h5">Hint: The nickname rhymes with his last name.</span>
+                <ol>
+                    <li>
+                        <input id="41" type="radio" name="m5" value="a">Trevin Jones</input>
+                    </li>
+                    <li>
+                        <input id="42" type="radio" name="m5" value="b">Rashad Evans</input>
+                    </li>
+                    <li>
+                        <input id="43" type="radio" name="m5" value="c">Jon Jones</input>
+                    </li>
+                    <li>
+                        <input id="44" type="radio" name="m5" value="d">Dominick Reyes</input>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        </span>
+        <!--Button to submit and check answers-->
+        <br>
+        <button id="btn1">Submit Answers</button><br><br>
+        <p id="numcorrect"></p>
+    </body>
+</html>
